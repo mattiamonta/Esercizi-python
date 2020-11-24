@@ -1,10 +1,17 @@
-candidato_1 = input("Dimmi il nome del primo candidato: ")
-candidato_2 = input("Dimmi il nome del secondo candidato: ")
-punteggio_1 = int(input("Qual è il punteggio del primo candidato? "))
-punteggio_2 = int(input("Qual è il punteggio del secondo candidato? "))
-lista = [candidato_1,candidato_2]
-lista_punt = [punteggio_1,punteggio_2]
-print(min(lista),max(lista))
-lista_punt.sort()
-lista_punt.reverse()
-print(lista_punt)
+lista_nomi = []
+lista_punti = []
+cont = int(input("Inserisci il numero di candidati: "))
+
+for i in range(cont):
+    lista_nomi.append(input("Dimmi il nome del " + str(i+1) + " candidato: "))
+    lista_punti.append(int(input("Qual è il punteggio del " + str(i+1) + " candidato? ")))
+
+lista_nomi.sort()
+print("Candidati in ordine alfabetico:")
+for c in lista_nomi:
+    print("\t- " + c)
+
+lista_punti.sort(reverse=True)
+print("Punteggi in ordine descrescente:")
+for p in lista_punti:
+    print("\t- " + str(p))
