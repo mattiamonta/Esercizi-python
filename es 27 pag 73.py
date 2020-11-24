@@ -1,9 +1,14 @@
 lista=[]
 while True: 
-    transizione=input("Il suo veicolo è in procinto di passare per questo casello? (premere 0 per terminare) "))
-    lista.append(transizione)
-    if transizione==0 :
+    n=int(input("Quanti veicoli sono transitati? (premere 0 per terminare) "))
+    lista.append(n)
+    if n==0 :
         break
-print(len(lista))
+
+somma = 0
+for n in lista:
+    somma += n
+
+print("Sono tranistati in tutto " + str(somma) + " veicoli")
 
 
