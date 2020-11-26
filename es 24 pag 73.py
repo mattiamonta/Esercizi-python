@@ -8,7 +8,7 @@ print("La percentuale dei voti di ",candidato1, "è",perc_candidato1)
 print("La percentuale dei voti di ",candidato2 ,"è",perc_candidato2)
 if perc_candidato2>perc_candidato1:
     print(candidato2, "ha ottenuto la maggioranza dei voti.")
-elif perc_candidato1<perc_candidato2:
+elif perc_candidato2<perc_candidato1:
     print(candidato1, "ha ottenuto la maggioranza dei voti.")
 else:
     print("I due candidati hanno ottenuto lo stesso numero di voti.")
