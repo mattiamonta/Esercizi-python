@@ -22,4 +22,4 @@ for c in lista_citta:
 
 print("Le città che hanno superato l'escursione termica prefissata di",escursione_prefiss,"°C sono state",citta_cont,":")
 for c in lista_citta_escursione_superiore:
-    print("\t-",c[0],"- esursione:",c[2]-c[1])
+    print("\t-",c[0],"- escursione:",c[2]-c[1])
