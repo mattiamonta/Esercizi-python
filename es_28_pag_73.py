@@ -5,7 +5,7 @@ while True:
     if nome=="0":
         break
     studente.append(nome)
-    lancio = int(input("Quanti metri ha percorso il peso? "))
+    lancio = float(input("Quanti metri ha percorso il peso? "))
     studente.append(lancio)
     studenti_list.append(studente)
 max = 0
