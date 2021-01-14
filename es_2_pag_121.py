@@ -1,4 +1,4 @@
-# data la parabola y = ax2 + bx + c calcola il vertice e il fuoco della parabola
+# data la parabola y = ax2 + bx + c calcola il vertice e il fuoco
 
 def delta(n1, n2, n3):
     d = n2*n2 - 4*n1*n3
