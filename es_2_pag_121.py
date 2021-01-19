@@ -1,4 +1,4 @@
-# data la parabola y = ax2 + bx + c calcola il vertice e il fuocoZ
+# data la parabola y = ax2 + bx + c calcola il vertice e il fuoco
 
 def delta(n1, n2, n3):
     d = n2*n2 - 4*n1*n3
@@ -10,12 +10,6 @@ def vertice(n1, n2, n3):
     return v
 
 def fuoco(n1,n2,n3):
-    ##fx = -n2/2*n1
-    ##fy = 1-d/4*n1
-    ##return fx, fy
-    # f = {}
-    # f['x'] = -n2/2*n1
-    # f['y'] = 1-d/4*n1
     d = delta(a, b, c)
     f = {'x': -n2/2*n1 , 'y': 1-d/4*n1}
     return f
@@ -29,6 +23,4 @@ b = float(input("Inserisci il valore di b: "))
 c = float(input("Inserisci il valore di c: "))
 v = vertice(a, b, c)
 f = fuoco(a, b, c)
-#print("Il vertice della parabola è (",v['x'],",",v['y'],")")
-#print("Il fuoco della parabola è (",f['x'],",",f['y'],")")
 printresult(v, f)
