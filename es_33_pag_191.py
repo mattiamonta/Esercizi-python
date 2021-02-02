@@ -11,7 +11,7 @@ def menu():
         print("2) Avanzamento coda (analisi prossimo paziente in coda)")
         print("3) Stampa pazienti in coda")
         print("4) Uscita dal programma")
-        scelta = int(input("Scelta voce di menù (1, 2, 3 o 4):"))
+        scelta = int(input("Scelta voce di menù (1, 2, 3 o 4): "))
         print()
         if scelta >=1 and scelta <=4:
             return scelta
