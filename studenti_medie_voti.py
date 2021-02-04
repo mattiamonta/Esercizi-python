@@ -1,3 +1,18 @@
+'''Si definisca una funzione che preso un dizionario di studenti e voti, restituisca
+un dizionario con gli studenti suddivisi per intervalli di media di voto: k1
+(18,23), k2(24,26) e k3(27,30).
+Nel calcolo della media la lode permette di arrotondare all’intero successivo,
+nel caso in cui nella lista dei voti non sia presente una lode l’arrotondamento è
+per difetto.
+Esempio:
+Dizionario di partenza:
+studente_mediaVoti: [‘Alighieri’: [24,30,26]], [‘Boccaccio’: [18,22,24]],
+[‘Manzoni’: [30,29,30], …………….]
+Dizionario finale:
+votoMedio_studenti: [(18,23): [‘Boccaccio’, ...], (24,27): [‘Alighieri’,.....], (28,30):
+[‘Manzoni’, …….]]
+'''
+
 def stampa_studenti(diz):
     for studente in diz:
         print("Voti di", studente, ":")
