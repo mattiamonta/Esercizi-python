@@ -1,8 +1,8 @@
 class atleta:
-    nome = ""
-    eta = 0
-    squadra = ""
-    visita_medica = False
+    # nome = ""
+    # eta = 0
+    # squadra = ""
+    # visita_medica = False
 
     def __init__(self, nome, eta):
         self.nome = nome
